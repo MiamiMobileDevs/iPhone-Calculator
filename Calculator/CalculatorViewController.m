@@ -10,6 +10,107 @@
 
 @implementation CalculatorViewController
 
+- (CalculatorBrain *)brain
+{
+    if (!brain) brain = [[CalculatorBrain alloc] init];
+    return brain;
+}
+
+- (IBAction)digitPressed: (UIButton *)sender
+{
+    NSString *digit = [[sender titleLabel] text];
+    
+    
+    if (userIsInTheMiddleOfTypingANumber) {
+        [display setText:[[display text] stringByAppendingString:digit]];
+    }
+    else
+    {
+        [display setText:digit];
+        userIsInTheMiddleOfTypingANumber = YES;
+    }
+    
+}
+
+- (IBAction)deleteDigit
+{
+    if (userIsInTheMiddleOfTypingANumber)
+    {
+        NSString * current = display.text;
+        NSString * new = [current substringToIndex:[current length] - 1];
+        if ([new length] > 0)
+        {
+            display.text = new;
+        }
+        else
+        {
+            userIsInTheMiddleOfTypingANumber = NO;
+            display.text = @"0";
+        }
+        
+    }
+}
+
+-(IBAction)memoryActionPressed: (UIButton *)sender
+{
+    NSString *operation = [[sender titleLabel] text];
+    if ([@"MS" isEqualToString:operation])
+    {
+        calculatorMemory = [[display text] doubleValue];
+    }
+    else if ([@"MR" isEqualToString:operation])
+    {
+        userIsInTheMiddleOfTypingANumber = NO;
+        display.text = [NSString stringWithFormat:@"%g", calculatorMemory];
+    }
+    else if ([@"MR" isEqualToString:operation])
+    {
+        calculatorMemory = 0;   
+    }
+    else if ([@"M+" isEqualToString:operation])
+    {
+        calculatorMemory = calculatorMemory + [[display text] doubleValue];   
+    }
+}
+
+- (IBAction)decimalPressed: (UIButton *)sender
+{
+    if (decimalAlreadyEnteredInDisplay == NO)
+    {
+        if (userIsInTheMiddleOfTypingANumber == NO)
+        {
+            userIsInTheMiddleOfTypingANumber = YES;
+            [display setText:@"0."];
+        }
+        else
+        {
+            [display setText:[[display text] stringByAppendingString:@"."]];
+        }
+        decimalAlreadyEnteredInDisplay = YES;
+    }
+
+}
+
+- (IBAction)clearCalculator
+{
+    [brain release];
+    brain = [[CalculatorBrain alloc] init];
+    [display setText:@"0"];
+}
+
+
+- (IBAction)operationPressed: (UIButton *)sender
+{
+    if (userIsInTheMiddleOfTypingANumber) {
+        [[self brain] setOperand:[[display text] doubleValue]];
+        userIsInTheMiddleOfTypingANumber = NO;
+        decimalAlreadyEnteredInDisplay = NO;
+    }
+    NSString *operation = [[sender titleLabel] text];
+    double result = [[self brain] performOperation:operation];
+    [display setText:[NSString stringWithFormat:@"%g", result]];
+}
+
 - (void)dealloc
 {
     [super dealloc];

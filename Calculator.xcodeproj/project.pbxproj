@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B2EBA001467317B00B6DC6D /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B2EB9FF1467317B00B6DC6D /* button.png */; };
+		6B2EBA03146731D600B6DC6D /* calc.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B2EBA02146731D600B6DC6D /* calc.png */; };
 		6B47B70F14631DF000FC8A0D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B47B70E14631DF000FC8A0D /* UIKit.framework */; };
 		6B47B71114631DF000FC8A0D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B47B71014631DF000FC8A0D /* Foundation.framework */; };
 		6B47B71314631DF000FC8A0D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B47B71214631DF000FC8A0D /* CoreGraphics.framework */; };
@@ -16,23 +18,28 @@
 		6B47B72214631DF000FC8A0D /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B47B72014631DF000FC8A0D /* MainWindow.xib */; };
 		6B47B72514631DF000FC8A0D /* CalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B47B72414631DF000FC8A0D /* CalculatorViewController.m */; };
 		6B47B72814631DF000FC8A0D /* CalculatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B47B72614631DF000FC8A0D /* CalculatorViewController.xib */; };
+		6B47B73014632CCD00FC8A0D /* CalculatorBrain.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B47B72F14632CCD00FC8A0D /* CalculatorBrain.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6B2EB9FF1467317B00B6DC6D /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
+		6B2EBA02146731D600B6DC6D /* calc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calc.png; sourceTree = "<group>"; };
 		6B47B70A14631DF000FC8A0D /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B47B70E14631DF000FC8A0D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6B47B71014631DF000FC8A0D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6B47B71214631DF000FC8A0D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		6B47B71614631DF000FC8A0D /* Calculator-Info.plist */ = {isa = PBXFileReference; path = "Calculator-Info.plist"; sourceTree = "<group>"; };
+		6B47B71614631DF000FC8A0D /* Calculator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Calculator-Info.plist"; sourceTree = "<group>"; };
 		6B47B71814631DF000FC8A0D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6B47B71A14631DF000FC8A0D /* Calculator-Prefix.pch */ = {isa = PBXFileReference; path = "Calculator-Prefix.pch"; sourceTree = "<group>"; };
+		6B47B71A14631DF000FC8A0D /* Calculator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Calculator-Prefix.pch"; sourceTree = "<group>"; };
 		6B47B71B14631DF000FC8A0D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6B47B71D14631DF000FC8A0D /* CalculatorAppDelegate.h */ = {isa = PBXFileReference; path = CalculatorAppDelegate.h; sourceTree = "<group>"; };
+		6B47B71D14631DF000FC8A0D /* CalculatorAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculatorAppDelegate.h; sourceTree = "<group>"; };
 		6B47B71E14631DF000FC8A0D /* CalculatorAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorAppDelegate.m; sourceTree = "<group>"; };
 		6B47B72114631DF000FC8A0D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		6B47B72314631DF000FC8A0D /* CalculatorViewController.h */ = {isa = PBXFileReference; path = CalculatorViewController.h; sourceTree = "<group>"; };
+		6B47B72314631DF000FC8A0D /* CalculatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculatorViewController.h; sourceTree = "<group>"; };
 		6B47B72414631DF000FC8A0D /* CalculatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorViewController.m; sourceTree = "<group>"; };
 		6B47B72714631DF000FC8A0D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CalculatorViewController.xib; sourceTree = "<group>"; };
+		6B47B72E14632CCD00FC8A0D /* CalculatorBrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorBrain.h; sourceTree = "<group>"; };
+		6B47B72F14632CCD00FC8A0D /* CalculatorBrain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorBrain.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +59,8 @@
 		6B47B6FF14631DF000FC8A0D = {
 			isa = PBXGroup;
 			children = (
+				6B2EBA02146731D600B6DC6D /* calc.png */,
+				6B2EB9FF1467317B00B6DC6D /* button.png */,
 				6B47B71414631DF000FC8A0D /* Calculator */,
 				6B47B70D14631DF000FC8A0D /* Frameworks */,
 				6B47B70B14631DF000FC8A0D /* Products */,
@@ -86,6 +95,8 @@
 				6B47B72414631DF000FC8A0D /* CalculatorViewController.m */,
 				6B47B72614631DF000FC8A0D /* CalculatorViewController.xib */,
 				6B47B71514631DF000FC8A0D /* Supporting Files */,
+				6B47B72E14632CCD00FC8A0D /* CalculatorBrain.h */,
+				6B47B72F14632CCD00FC8A0D /* CalculatorBrain.m */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -151,6 +162,8 @@
 				6B47B71914631DF000FC8A0D /* InfoPlist.strings in Resources */,
 				6B47B72214631DF000FC8A0D /* MainWindow.xib in Resources */,
 				6B47B72814631DF000FC8A0D /* CalculatorViewController.xib in Resources */,
+				6B2EBA001467317B00B6DC6D /* button.png in Resources */,
+				6B2EBA03146731D600B6DC6D /* calc.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +177,7 @@
 				6B47B71C14631DF000FC8A0D /* main.m in Sources */,
 				6B47B71F14631DF000FC8A0D /* CalculatorAppDelegate.m in Sources */,
 				6B47B72514631DF000FC8A0D /* CalculatorViewController.m in Sources */,
+				6B47B73014632CCD00FC8A0D /* CalculatorBrain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +290,7 @@
 				6B47B72D14631DF000FC8A0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

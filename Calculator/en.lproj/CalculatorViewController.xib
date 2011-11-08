@@ -143,7 +143,7 @@
 						<reference key="IBUIFont" ref="79041062"/>
 						<int key="IBUIButtonType">1</int>
 						<string key="IBUITitleShadowOffset">{1, 1}</string>
-						<string key="IBUINormalTitle">5</string>
+						<string key="IBUINormalTitle">4</string>
 						<reference key="IBUIHighlightedTitleColor" ref="713037853"/>
 						<reference key="IBUINormalTitleColor" ref="80501251"/>
 						<reference key="IBUINormalTitleShadowColor" ref="713037853"/>
@@ -162,7 +162,7 @@
 						<reference key="IBUIFont" ref="79041062"/>
 						<int key="IBUIButtonType">1</int>
 						<string key="IBUITitleShadowOffset">{1, 1}</string>
-						<string key="IBUINormalTitle">6</string>
+						<string key="IBUINormalTitle">5</string>
 						<reference key="IBUIHighlightedTitleColor" ref="713037853"/>
 						<reference key="IBUINormalTitleColor" ref="80501251"/>
 						<reference key="IBUINormalTitleShadowColor" ref="713037853"/>
@@ -181,7 +181,7 @@
 						<reference key="IBUIFont" ref="79041062"/>
 						<int key="IBUIButtonType">1</int>
 						<string key="IBUITitleShadowOffset">{1, 1}</string>
-						<string key="IBUINormalTitle">7</string>
+						<string key="IBUINormalTitle">6</string>
 						<reference key="IBUIHighlightedTitleColor" ref="713037853"/>
 						<reference key="IBUINormalTitleColor" ref="80501251"/>
 						<reference key="IBUINormalTitleShadowColor" ref="713037853"/>
@@ -363,7 +363,6 @@
 						<string key="NSFrame">{{247, 389}, {48, 37}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>

@@ -1,6 +1,6 @@
 # iPhone Calculator
 
-![](http://dl.dropbox.com/u/59591/calc.png)
+![](http://dl.dropbox.com/u/59591/calc-2.png)
 
 This is a simple iPhone Calculator.  It was written by [Nick Rowe](http://dcxn.com/) in November of 2011.
 

@@ -1,4 +1,5 @@
 # iPhone Calculator
+##Fellas!  This an example of a working stand-alone project that may give some insight into the structure.  No tutorial of any kind, but may offer snippets of code you may want to become familiar with.
 
 ![](http://dl.dropbox.com/u/59591/calc-2.png)
 
